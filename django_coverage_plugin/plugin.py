@@ -118,7 +118,8 @@ class DjangoTemplatePlugin(
 ):
 
     def __init__(self):
-        check_debug()
+        # This causes an error.
+        # check_debug()
 
         self.django_template_dir = os.path.realpath(
             os.path.dirname(django.template.__file__)
